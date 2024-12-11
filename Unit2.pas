@@ -64,7 +64,7 @@ begin
 
   // Handle the click normally
   WebMemo1.lines.Add('Single click handled');
-  WebMemo2.lines.Add(inttostr(NumClick));
+  WebMemo2.lines.Add(inttostr(NumClick)+' '+'no double clicking issue');
   if NumClick <> 0 then
   showmessage('Duplicate click detected')
 end;
@@ -96,7 +96,7 @@ begin
 
   // Handle the click normally
   WebMemo1.lines.Add('Single click handled');
-  WebMemo2.lines.Add(inttostr(NumClick));
+  WebMemo2.lines.Add(inttostr(NumClick)+' '+'no double clicking issue');
   if NumClick <> 0 then
   showmessage('Duplicate click detected')
 end;
@@ -128,7 +128,7 @@ begin
 
   // Handle the click normally
   WebMemo1.lines.Add('Single click handled');
-  WebMemo2.lines.Add(inttostr(NumClick));
+  WebMemo2.lines.Add(inttostr(NumClick)+' '+'no double clicking issue');
   if NumClick <> 0 then
   showmessage('Duplicate click detected')
 end;
