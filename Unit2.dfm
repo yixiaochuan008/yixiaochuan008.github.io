@@ -4,27 +4,29 @@ object Form2: TForm2
   OnShow = WebFormShow
   object WebMemo1: TWebMemo
     Left = 0
-    Top = 50
+    Top = 202
     Width = 640
-    Height = 430
+    Height = 278
     Align = alClient
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
     HeightPercent = 100.000000000000000000
-    Lines.Strings = (
-      'WebMemo1')
+    ParentFont = False
     SelLength = 0
     SelStart = 0
     WidthPercent = 100.000000000000000000
-    ExplicitLeft = 232
-    ExplicitTop = 200
-    ExplicitWidth = 185
-    ExplicitHeight = 89
+    ExplicitTop = 177
+    ExplicitHeight = 303
   end
   object TBB_RunDyn: TTMSFNCToolBarButton
     AlignWithMargins = True
     Left = 0
-    Top = 10
+    Top = 35
     Width = 640
-    Height = 30
+    Height = 47
     Hint = 'Dynamic simulation'
     Margins.Left = 0
     Margins.Top = 10
@@ -35,7 +37,7 @@ object Form2: TForm2
     DoubleBuffered = True
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -13
+    Font.Height = -16
     Font.Name = 'Arial'
     Font.Style = []
     ParentColor = True
@@ -43,7 +45,7 @@ object Form2: TForm2
     ShowHint = True
     TabOrder = 1
     OnClick = TBB_RunDynClick
-    Text = 'Click '
+    Text = 'Click  TTMSFNCToolBarButton'
     Bitmaps = <
       item
         BitmapName = 'play'
@@ -68,7 +70,61 @@ object Form2: TForm2
     Appearance.DownStroke.Kind = gskNone
     Appearance.DisabledFill.Kind = gfkNone
     Appearance.DisabledStroke.Kind = gskNone
-    ExplicitWidth = 460
+    ExplicitTop = 10
     ControlIndex = 0
+  end
+  object WebButton1: TWebButton
+    Left = 0
+    Top = 92
+    Width = 640
+    Height = 55
+    Align = alTop
+    Caption = 'Click  TWebButton'
+    ChildOrder = 2
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    HeightPercent = 100.000000000000000000
+    ParentFont = False
+    WidthPercent = 100.000000000000000000
+    OnClick = WebButton1Click
+    ExplicitTop = 67
+  end
+  object TMSFNCButton1: TTMSFNCButton
+    Left = 0
+    Top = 147
+    Width = 640
+    Height = 55
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Text = 'Click  TTMSFNCHTMLText'
+    Align = alTop
+    TabOrder = 3
+    OnClick = TMSFNCButton1Click
+    ExplicitTop = 116
+  end
+  object WebButton2: TWebButton
+    Left = 0
+    Top = 0
+    Width = 640
+    Height = 25
+    Align = alTop
+    Caption = 'Clear memo'
+    ChildOrder = 4
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    HeightPercent = 100.000000000000000000
+    ParentFont = False
+    WidthPercent = 100.000000000000000000
+    OnClick = WebButton2Click
+    ExplicitLeft = 24
   end
 end
