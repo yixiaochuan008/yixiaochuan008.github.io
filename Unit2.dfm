@@ -1,13 +1,13 @@
 object Form2: TForm2
   Width = 640
-  Height = 480
+  Height = 844
   OnShow = WebFormShow
   object WebMemo1: TWebMemo
     Left = 0
     Top = 202
     Width = 640
-    Height = 278
-    Align = alClient
+    Height = 295
+    Align = alTop
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -19
@@ -18,8 +18,6 @@ object Form2: TForm2
     SelLength = 0
     SelStart = 0
     WidthPercent = 100.000000000000000000
-    ExplicitTop = 177
-    ExplicitHeight = 303
   end
   object TBB_RunDyn: TTMSFNCToolBarButton
     AlignWithMargins = True
@@ -45,6 +43,7 @@ object Form2: TForm2
     ShowHint = True
     TabOrder = 1
     OnClick = TBB_RunDynClick
+    OnMouseUp = TBB_RunDynMouseUp
     Text = 'Click  TTMSFNCToolBarButton'
     Bitmaps = <
       item
@@ -70,7 +69,6 @@ object Form2: TForm2
     Appearance.DownStroke.Kind = gskNone
     Appearance.DisabledFill.Kind = gfkNone
     Appearance.DisabledStroke.Kind = gskNone
-    ExplicitTop = 10
     ControlIndex = 0
   end
   object WebButton1: TWebButton
@@ -90,7 +88,7 @@ object Form2: TForm2
     ParentFont = False
     WidthPercent = 100.000000000000000000
     OnClick = WebButton1Click
-    ExplicitTop = 67
+    OnMouseUp = WebButton1MouseUp
   end
   object TMSFNCButton1: TTMSFNCButton
     Left = 0
@@ -106,7 +104,7 @@ object Form2: TForm2
     Align = alTop
     TabOrder = 3
     OnClick = TMSFNCButton1Click
-    ExplicitTop = 116
+    OnMouseUp = TMSFNCButton1MouseUp
   end
   object WebButton2: TWebButton
     Left = 0
@@ -125,6 +123,22 @@ object Form2: TForm2
     ParentFont = False
     WidthPercent = 100.000000000000000000
     OnClick = WebButton2Click
-    ExplicitLeft = 24
+  end
+  object WebMemo2: TWebMemo
+    Left = 0
+    Top = 497
+    Width = 640
+    Height = 347
+    Align = alClient
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    HeightPercent = 100.000000000000000000
+    ParentFont = False
+    SelLength = 0
+    SelStart = 0
+    WidthPercent = 100.000000000000000000
   end
 end
