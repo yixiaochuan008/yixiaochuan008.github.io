@@ -1,14 +1,14 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
-        <ProjectGuid>{B3A27C64-C512-4668-859A-7A946CE596F9}</ProjectGuid>
+        <ProjectGuid>{581E9E3B-A077-4BF2-9DFE-913546DD429B}</ProjectGuid>
         <ProjectVersion>19.2</ProjectVersion>
         <FrameworkType>VCL</FrameworkType>
-        <MainSource>Project2.dpr</MainSource>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Release</Config>
+        <Config Condition="'$(Config)'==''">Debug</Config>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <TargetedPlatforms>1</TargetedPlatforms>
         <AppType>Application</AppType>
+        <MainSource>Project2.dpr</MainSource>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
         <Base>true</Base>
@@ -58,10 +58,7 @@
         <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
         <Icns_MainIcns>$(BDS)\bin\delphi_PROJECTICNS.icns</Icns_MainIcns>
         <SanitizedProjectName>Project2</SanitizedProjectName>
-        <VerInfo_Locale>4105</VerInfo_Locale>
-        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <TMSWebHTMLFile>Project2.html</TMSWebHTMLFile>
-        <TMSWebOutputPath>D:\projects\48. double click</TMSWebOutputPath>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
         <DCC_UsePackage>DBXSqliteDriver;RESTComponents;DBXInterBaseDriver;DirWatchPkg;TeeTree2D27Tee9;vclactnband;ZoomControlPackageRS104;vclFireDAC;VCLTMSFNCDashboardPackPkgDXE13;FMXTree27;FlexCel_Pdf;bindcompvclsmp;VCLTMSFNCWebSocketPkgDXE13;tethering;svnui;FireDACADSDriver;BWComControlsRS104;FMXTeeImport927;DymoNewRS104;vcltouch;FMXTMSFNCDashboardPackPkgDXE13;WebLib.ESABaseComponentsRS104;vcldb;bindcompfmx;svn;inetdb;FMXTeeLanguage927;VCLTMSFNCCloudPackPkgDXE13;fmx;FireDACIBDriver;fmxdae;TMSFNCCorePkgDXE13;VCL_FlexCel_Components;vcledge;StateVectSGRS104;FMXTMSFNCCloudPackPkgDXE13;dbexpress;IndyCore;vclx;Python;dsnap;FireDACCommon;FMXTeeDB927;RESTBackendComponents;VCLTMSFNCCorePkgDXE13;VCLRESTComponents;soapserver;FMXTMSFNCUIPackPkgDXE13;VCLTMSFNCUIPackPkgDXE13;vclie;bindengine;DBXMySQLDriver;CloudService;FireDACMySQLDriver;FireDACCommonODBC;FireDACCommonDriver;ICControlerPanelCRS104;TMSWEBCorePkgLibDXE13;FMXTMSFNCBloxPkgDXE13;inet;IndyIPCommon;bindcompdbx;BWStoreRS104;FMXTMSFNCWXPackPkgDXE13;vcl;IndyIPServer;IndySystem;VCLTMSFNCBloxPkgDXE13;bindcompvclwinx;dsnapcon;FmxTeeUI927;FireDACMSAccDriver;fmxFireDAC;vclimg;FMXTeePro927;FMXTMSFNCCorePkgDXE13;FireDAC;FlexCel_XlsAdapter;FireDACSqliteDriver;FireDACPgDriver;BWDragBandRS104;TMSWEBCorePkgDXE13;soaprtl;DbxCommonDriver;FlexCel_Core;FMXTee927;PythonVcl;FMXTMSFNCWebSocketPkgDXE13;xmlrtl;soapmidas;fmxobj;vclwinx;PythonFmx;rtl;DbxClientDriver;VCLTMSFNCWXPackPkgDXE13;CustomIPTransport;vcldsnap;bindcomp;appanalytics;IndyIPClient;bindcompvcl;FMX_FlexCel_Components;dbxcds;VclSmp;VCL_FlexCel_Core;adortl;FlexCel_Render;dsnapxml;dbrtl;IndyProtocols;inetdbxpress;fmxase;$(DCC_UsePackage)</DCC_UsePackage>
@@ -89,8 +86,6 @@
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
-        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
-        <VerInfo_Locale>1033</VerInfo_Locale>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -135,19 +130,6 @@
                 <Source>
                     <Source Name="MainSource">Project2.dpr</Source>
                 </Source>
-                <Excluded_Packages>
-                    <Excluded_Packages Name="C:\Program Files (x86)\Steema Software\Steema TeeChart Pro VCL FMX 2024.40\Delphi27\Delphi27.win32\Bin\DclTeePro927.bpl">TeeChart Pro 2024 VCL Components</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k270.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp270.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k270.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp270.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\21.0\Bpl\TMSFNCUIPackPkgDEDXE13.bpl">TMS FNC UI Pack for FMX/VCL Designtime</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\21.0\Bpl\TMSFNCWebSocketPkgDEDXE13.bpl">TMS FNC WebSocket for FMX/VCL Designtime</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\21.0\Bpl\TMSFNCWXPackPkgDEDXE13.bpl">TMS FNC WX Pack for FMX/VCL Designtime</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\21.0\Bpl\TMSFNCDashboardPackPkgDEDXE13.bpl">TMS FNC Dashboard Pack for FMX/VCL Designtime</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\21.0\Bpl\TMSFNCCloudPackPkgDEDXE13.bpl">TMS FNC Cloud Pack for FMX/VCL Designtime</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\21.0\Bpl\TMSFNCBloxPkgDEDXE13.bpl">TMS FNC Blox for FMX/VCL Designtime</Excluded_Packages>
-                </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
                 <DeployFile LocalName="Win32\Debug\Project2.exe" Configuration="Debug" Class="ProjectOutput">
